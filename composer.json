@@ -1,0 +1,28 @@
+{
+	"name": "arkitecht/laravel-nullable",
+	"description": "Laravel 5 - Add nullable columns to models",
+	"keywords": [
+		"nullable",
+		"database",
+		"foreign",
+		"laravel",
+		"model",
+		"arkitecht"
+	],
+	"license": "MIT",
+	"authors": [
+	{
+		"name": "Aaron Rubin",
+		"email": "aaron@arkitech.net"
+	}
+	],
+	"require": {
+		"php": ">=5.5.9",
+		"laravel/framework": "5.1.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Arkitecht\\Nullable\\": "src/Arkitecht/Nullable/"
+		}
+	}
+}
