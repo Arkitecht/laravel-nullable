@@ -1,20 +1,19 @@
 Laravel Nullable
 =================
-Easily set model columns as nullable - to send null on insert update when empty. For use when using foreign key, nullable, columns.
+Easily set model columns as nullable - to send null on insert and update when empty. For use when using foreign key, nullable, columns.
 
 
 Quick Installation
 ------------------
 You can install the package most easily through composer
 
-#### Laravel 5.1.x
 ```
 composer require arkitecht/laravel-nullable
 ```
 
 Using it in your model
 ------------------
-To have the creator and updater automagically updated when a model is created and updated, just use the Attributions trait in your model.
+Use the `$nullable` variable to define the nullable columns in your model. These will send null to the database when empty, rather than an empty string. 
 
 ```php
 <?php
