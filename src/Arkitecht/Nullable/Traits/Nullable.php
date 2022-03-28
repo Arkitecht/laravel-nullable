@@ -28,7 +28,7 @@ trait Nullable
     protected static function setNullables($model)
     {
         foreach ($model->nullable as $field) {
-            if (empty($model->{$field})) {
+            if (empty($model->{$field}) && !is_numeric($model->{$field})) {
                 $model->{$field} = null;
             }
         }
